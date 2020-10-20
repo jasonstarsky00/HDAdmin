@@ -1,0 +1,4 @@
+D:\github\HDAdmin\HDAdmin\HDModels\bin\Debug\HDModels.dll
+D:\github\HDAdmin\HDAdmin\HDModels\bin\Debug\HDModels.pdb
+D:\github\HDAdmin\HDAdmin\HDModels\obj\Debug\HDModels.dll
+D:\github\HDAdmin\HDAdmin\HDModels\obj\Debug\HDModels.pdb
