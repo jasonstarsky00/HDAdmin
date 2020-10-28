@@ -2,3 +2,4 @@ D:\github\HDAdmin\HDAdmin\HDCommon\bin\Debug\HDCommon.dll
 D:\github\HDAdmin\HDAdmin\HDCommon\bin\Debug\HDCommon.pdb
 D:\github\HDAdmin\HDAdmin\HDCommon\obj\Debug\HDCommon.dll
 D:\github\HDAdmin\HDAdmin\HDCommon\obj\Debug\HDCommon.pdb
+D:\github\HDAdmin\HDAdmin\HDCommon\obj\Debug\HDCommon.csprojResolveAssemblyReference.cache

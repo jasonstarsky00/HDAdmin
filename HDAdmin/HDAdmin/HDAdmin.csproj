@@ -149,9 +149,15 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MenuController.cs" />
+    <Compile Include="Controllers\ManagerController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="HDBase\BaseHelper.cs" />
+    <Compile Include="HDBase\ConBase.cs" />
+    <Compile Include="HDHelpe\HDHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -198,6 +204,9 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Menu\" />
+    <Folder Include="Views\Role\" />
+    <Folder Include="Views\User\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -211,6 +220,10 @@
     <ProjectReference Include="..\HDBLL\HDBLL.csproj">
       <Project>{4e75e5f4-d924-4e82-ae18-af08f1d6002c}</Project>
       <Name>HDBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HDCommon\HDCommon.csproj">
+      <Project>{7a8f1d19-4ed9-4ac1-974d-087c5cc57cdd}</Project>
+      <Name>HDCommon</Name>
     </ProjectReference>
     <ProjectReference Include="..\HDData\HDData.csproj">
       <Project>{b3e16b87-b79b-4ed0-8869-220aee03292d}</Project>

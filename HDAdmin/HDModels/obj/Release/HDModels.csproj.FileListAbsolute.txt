@@ -1,0 +1,5 @@
+D:\github\HDAdmin\HDAdmin\HDModels\bin\Release\HDModels.dll
+D:\github\HDAdmin\HDAdmin\HDModels\bin\Release\HDModels.pdb
+D:\github\HDAdmin\HDAdmin\HDModels\obj\Release\HDModels.csprojResolveAssemblyReference.cache
+D:\github\HDAdmin\HDAdmin\HDModels\obj\Release\HDModels.dll
+D:\github\HDAdmin\HDAdmin\HDModels\obj\Release\HDModels.pdb

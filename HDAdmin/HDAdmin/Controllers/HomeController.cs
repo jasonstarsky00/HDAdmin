@@ -1,4 +1,5 @@
-﻿using HDBLL;
+﻿using HDAdmin.HDBase;
+using HDBLL;
 using HDModels;
 using System;
 using System.Collections.Generic;
@@ -8,10 +9,11 @@ using System.Web.Mvc;
 
 namespace HDAdmin.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : ConBase
     {
         public ActionResult Index()
         {
+            
             user user = BLL_user.Instance.TestGetusers();
             return View();
         }
@@ -29,5 +31,21 @@ namespace HDAdmin.Controllers
 
             return View();
         }
+
+        /// <summary>
+        /// 登录
+        /// </summary>
+        /// <param name="user">账号</param>
+        /// <param name="password">密码</param>
+        /// <returns></returns>
+        public ActionResult Login(string user,string password)
+        {
+            return Json(new { code = 200, msg = "登录成功", data = new { id = 1, name = "sjjg", token= "jiayouya123456" } }, JsonRequestBehavior.AllowGet);
+        }
+        public ActionResult TestToken(string name)
+        {
+            return Json(new { code = 100, msg = "无奈" }, JsonRequestBehavior.AllowGet);
+        }
+        
     }
 }

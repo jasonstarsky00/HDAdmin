@@ -1,0 +1,5 @@
+D:\github\HDAdmin\HDAdmin\HDCommon\bin\Release\HDCommon.dll
+D:\github\HDAdmin\HDAdmin\HDCommon\bin\Release\HDCommon.pdb
+D:\github\HDAdmin\HDAdmin\HDCommon\obj\Release\HDCommon.csprojResolveAssemblyReference.cache
+D:\github\HDAdmin\HDAdmin\HDCommon\obj\Release\HDCommon.dll
+D:\github\HDAdmin\HDAdmin\HDCommon\obj\Release\HDCommon.pdb

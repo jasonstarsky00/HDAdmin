@@ -1,0 +1,11 @@
+D:\github\HDAdmin\HDAdmin\HDBLL\bin\Release\HDBLL.dll
+D:\github\HDAdmin\HDAdmin\HDBLL\bin\Release\HDBLL.pdb
+D:\github\HDAdmin\HDAdmin\HDBLL\bin\Release\HDCommon.dll
+D:\github\HDAdmin\HDAdmin\HDBLL\bin\Release\HDData.dll
+D:\github\HDAdmin\HDAdmin\HDBLL\bin\Release\HDModels.dll
+D:\github\HDAdmin\HDAdmin\HDBLL\bin\Release\HDCommon.pdb
+D:\github\HDAdmin\HDAdmin\HDBLL\bin\Release\HDData.pdb
+D:\github\HDAdmin\HDAdmin\HDBLL\bin\Release\HDModels.pdb
+D:\github\HDAdmin\HDAdmin\HDBLL\obj\Release\HDBLL.csprojResolveAssemblyReference.cache
+D:\github\HDAdmin\HDAdmin\HDBLL\obj\Release\HDBLL.dll
+D:\github\HDAdmin\HDAdmin\HDBLL\obj\Release\HDBLL.pdb

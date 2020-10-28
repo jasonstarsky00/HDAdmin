@@ -15,6 +15,9 @@ namespace XXCommon
         //默认路径
         private static string path = AppDomain.CurrentDomain.BaseDirectory.ToString() + @"Logs\";
 
+
+        //创建锁
+        private static object _lock = new object();
         /// <summary>
         /// 生成日志
         /// </summary>
@@ -22,31 +25,36 @@ namespace XXCommon
         /// <param name="txt"></param>
         public static void WriteLogs(string txt, string pathStr = "")
         {
-            try
+            lock (_lock)
             {
-                //如果不存在目录
-                if (!Directory.Exists(path + pathStr))
+                try
                 {
-                    Directory.CreateDirectory(path + pathStr);
-                }
-                //如果不存在该文件
-                if (!File.Exists(path + pathStr + @"\" + DateTime.Now.ToString("yyyy-MM-dd") + ".txt"))
-                {
-                    using (FileStream fs = File.Create(path + pathStr + @"\" + DateTime.Now.ToString("yyyy-MM-dd") + ".txt"))
+                    //如果不存在目录
+                    if (!Directory.Exists(path + pathStr))
                     {
+                        Directory.CreateDirectory(path + pathStr);
                     }
-                }
-                //写入内容
-                using (StreamWriter sw = new StreamWriter(path + pathStr + @"\" + DateTime.Now.ToString("yyyy-MM-dd") + ".txt", true, Encoding.Default))
-                {
-                    sw.WriteLine($"{DateTime.Now.ToString("\r\n  yyyy-MM-dd HH:mm:ss fff")}   :   {txt}");
-                }
+                    //如果不存在该文件
+                    if (!File.Exists(path + pathStr + @"\" + DateTime.Now.ToString("yyyy-MM-dd") + ".txt"))
+                    {
+                        using (FileStream fs = File.Create(path + pathStr + @"\" + DateTime.Now.ToString("yyyy-MM-dd") + ".txt"))
+                        {
+                        }
+                    }
+                    //写入内容
+                    using (StreamWriter sw = new StreamWriter(path + pathStr + @"\" + DateTime.Now.ToString("yyyy-MM-dd") + ".txt", true, Encoding.Default))
+                    {
+                        sw.WriteLine($"{DateTime.Now.ToString("\r\n  yyyy-MM-dd HH:mm:ss fff")}   :   {txt}");
+                    }
 
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("经过进一步包装的异常", ex);
+                }
             }
-            catch (Exception ex)
-            {
-                throw new Exception("经过进一步包装的异常", ex);
-            }
+                
+            
         }
 
     }

@@ -22,7 +22,12 @@ namespace HDModels
         private string _recomCode;
         private string _userAvatarSrc;
         private int _parentId;
+        private string _parentUserName;
         private string _parentName;
+        private int _topUid;
+        private string _topUserName;
+        private string _topName;
+        private int _isVip;
         private int _isManager;
         private int _haveDownloads;
         private int _downloaded;
@@ -31,6 +36,7 @@ namespace HDModels
         private int _loginCount;
         private string _lastLoginIp;
         private DateTime _lastLoginTime;
+        private int _isFreeze;
 
         /// <summary>
         /// 用户id
@@ -113,12 +119,52 @@ namespace HDModels
             set { _parentId = value; }
         }
         /// <summary>
+        /// 父级账号
+        /// </summary>
+        public string ParentUserName
+        {
+            get { return _parentUserName; }
+            set { _parentUserName = value; }
+        }
+        /// <summary>
         /// 父级名称
         /// </summary>
         public string ParentName
         {
             get { return _parentName; }
             set { _parentName = value; }
+        }
+        /// <summary>
+        /// 最上级id
+        /// </summary>
+        public int TopUid
+        {
+            get { return _topUid; }
+            set { _topUid = value; }
+        }
+        /// <summary>
+        /// vip
+        /// </summary>
+        public int IsVip
+        {
+            get { return _isVip; }
+            set { _isVip = value; }
+        }
+        /// <summary>
+        /// 最上级id
+        /// </summary>
+        public string TopUserName
+        {
+            get { return _topUserName; }
+            set { _topUserName = value; }
+        }
+        /// <summary>
+        /// 最上级名称
+        /// </summary>
+        public string TopName
+        {
+            get { return _topName; }
+            set { _topName = value; }
         }
         /// <summary>
         /// 是否管理员
@@ -183,6 +229,14 @@ namespace HDModels
         {
             get { return _lastLoginTime; }
             set { _lastLoginTime = value; }
+        }
+        /// <summary>
+        /// 是否冻结
+        /// </summary>
+        public int IsFreeze
+        {
+            get { return _isFreeze; }
+            set { _isFreeze = value; }
         }
     }
 }

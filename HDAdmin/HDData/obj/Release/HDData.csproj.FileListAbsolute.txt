@@ -1,0 +1,9 @@
+D:\github\HDAdmin\HDAdmin\HDData\bin\Release\HDData.dll
+D:\github\HDAdmin\HDAdmin\HDData\bin\Release\HDData.pdb
+D:\github\HDAdmin\HDAdmin\HDData\bin\Release\HDCommon.dll
+D:\github\HDAdmin\HDAdmin\HDData\bin\Release\HDModels.dll
+D:\github\HDAdmin\HDAdmin\HDData\bin\Release\HDCommon.pdb
+D:\github\HDAdmin\HDAdmin\HDData\bin\Release\HDModels.pdb
+D:\github\HDAdmin\HDAdmin\HDData\obj\Release\HDData.csprojResolveAssemblyReference.cache
+D:\github\HDAdmin\HDAdmin\HDData\obj\Release\HDData.dll
+D:\github\HDAdmin\HDAdmin\HDData\obj\Release\HDData.pdb
