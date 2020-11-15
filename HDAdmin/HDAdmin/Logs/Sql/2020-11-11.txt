@@ -1,0 +1,825 @@
+
+  2020-11-11 21:22:50 001   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/home/login','POST')
+
+  2020-11-11 21:22:50 191   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/Menu/GetMenus','GET')
+
+  2020-11-11 21:22:50 200   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 21:22:50 221   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/menu/getmenus' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 21:22:50 240   :   select m.*  from hd_roleUser ru left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.isShow = 1 and ru.uid = 4 and m.type = 1 or m.type = 3 and ru.isFreeze=1  order by m.sort
+
+  2020-11-11 21:22:52 943   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 21:23:03 561   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/User/List','GET')
+
+  2020-11-11 21:23:03 567   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 21:23:03 572   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/user/list' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 21:23:03 583   :   select top 10 
+                        (select count(*) from hd_user u where 1=1  )as total,* from 
+                        (select ROW_NUMBER()over (order by id) as Row,u.* from hd_user u where 1=1  )
+                         hd_user where Row between  0 and 10
+
+  2020-11-11 21:23:09 591   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 21:24:15 214   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 21:24:19 412   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 21:24:19 418   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/Menu/GetMenus','GET')
+
+  2020-11-11 21:24:19 428   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 21:24:19 436   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/menu/getmenus' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 21:24:19 447   :   select m.*  from hd_roleUser ru left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.isShow = 1 and ru.uid = 4 and m.type = 1 or m.type = 3 and ru.isFreeze=1  order by m.sort
+
+  2020-11-11 21:26:15 756   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 21:26:17 261   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 21:26:17 267   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/Menu/GetMenus','GET')
+
+  2020-11-11 21:26:17 315   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 21:26:17 322   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/menu/getmenus' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 21:26:17 330   :   select m.*  from hd_roleUser ru left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.isShow = 1 and ru.uid = 4 and m.type = 1 or m.type = 3 and ru.isFreeze=1  order by m.sort
+
+  2020-11-11 21:26:22 031   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/Menu/GetMenus','GET')
+
+  2020-11-11 21:26:22 037   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 21:26:22 044   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 21:26:22 051   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/menu/getmenus' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 21:26:22 062   :   select m.*  from hd_roleUser ru left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.isShow = 1 and ru.uid = 4 and m.type = 1 or m.type = 3 and ru.isFreeze=1  order by m.sort
+
+  2020-11-11 21:27:35 541   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 21:27:56 120   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 21:27:56 125   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/Menu/GetMenus','GET')
+
+  2020-11-11 21:27:56 134   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 21:27:56 141   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/menu/getmenus' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 21:27:56 150   :   select m.*  from hd_roleUser ru left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.isShow = 1 and ru.uid = 4 and m.type = 1 or m.type = 3 and ru.isFreeze=1  order by m.sort
+
+  2020-11-11 21:28:22 571   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/Menu/GetMenus','GET')
+
+  2020-11-11 21:28:22 577   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 21:28:22 583   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 21:28:22 590   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/menu/getmenus' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 21:28:22 599   :   select m.*  from hd_roleUser ru left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.isShow = 1 and ru.uid = 4 and m.type = 1 or m.type = 3 and ru.isFreeze=1  order by m.sort
+
+  2020-11-11 21:28:44 450   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 21:28:44 455   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/Menu/GetMenus','GET')
+
+  2020-11-11 21:28:44 464   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 21:28:44 471   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/menu/getmenus' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 21:28:44 481   :   select m.*  from hd_roleUser ru left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.isShow = 1 and ru.uid = 4 and m.type = 1 or m.type = 3 and ru.isFreeze=1  order by m.sort
+
+  2020-11-11 21:29:41 286   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 21:29:45 557   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 21:29:45 562   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/Menu/GetMenus','GET')
+
+  2020-11-11 21:29:45 605   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 21:29:45 612   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/menu/getmenus' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 21:29:45 622   :   select m.*  from hd_roleUser ru left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.isShow = 1 and ru.uid = 4 and m.type = 1 or m.type = 3 and ru.isFreeze=1  order by m.sort
+
+  2020-11-11 21:29:51 368   :     select * from hd_role
+
+  2020-11-11 21:30:01 949   :     select * from hd_role
+
+  2020-11-11 21:31:34 716   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Firefox','/Menu/GetMenus','GET')
+
+  2020-11-11 21:31:34 721   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 21:31:34 726   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 21:31:34 733   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/menu/getmenus' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 21:31:34 743   :   select m.*  from hd_roleUser ru left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.isShow = 1 and ru.uid = 4 and m.type = 1 or m.type = 3 and ru.isFreeze=1  order by m.sort
+
+  2020-11-11 21:31:40 907   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Firefox','/User/List','GET')
+
+  2020-11-11 21:31:40 913   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 21:31:40 918   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/user/list' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 21:31:40 927   :   select top 10 
+                        (select count(*) from hd_user u where 1=1  )as total,* from 
+                        (select ROW_NUMBER()over (order by id) as Row,u.* from hd_user u where 1=1  )
+                         hd_user where Row between  0 and 10
+
+  2020-11-11 21:31:43 785   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Firefox','/Menu/GetMenus','GET')
+
+  2020-11-11 21:31:43 790   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Firefox','/User/List','GET')
+
+  2020-11-11 21:31:43 797   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 21:31:43 801   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 21:31:43 805   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/menu/getmenus' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 21:31:43 809   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/user/list' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 21:31:43 814   :   select m.*  from hd_roleUser ru left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.isShow = 1 and ru.uid = 4 and m.type = 1 or m.type = 3 and ru.isFreeze=1  order by m.sort
+
+  2020-11-11 21:31:43 820   :   select top 10 
+                        (select count(*) from hd_user u where 1=1  )as total,* from 
+                        (select ROW_NUMBER()over (order by id) as Row,u.* from hd_user u where 1=1  )
+                         hd_user where Row between  0 and 10
+
+  2020-11-11 21:31:46 195   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 21:31:48 517   :     select * from hd_role
+
+  2020-11-11 21:37:30 341   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 21:38:20 351   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 21:38:23 760   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 21:38:23 767   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('127.0.0.1','Firefox','/Menu/GetMenus','GET')
+
+  2020-11-11 21:38:23 775   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 21:38:23 784   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/menu/getmenus' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 21:38:23 797   :   select m.*  from hd_roleUser ru left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.isShow = 1 and ru.uid = 4 and m.type = 1 or m.type = 3 and ru.isFreeze=1  order by m.sort
+
+  2020-11-11 21:38:24 958   :     select * from hd_role
+
+  2020-11-11 22:12:14 483   :     select * from hd_role
+
+  2020-11-11 22:16:10 744   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 22:17:00 150   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 22:17:06 785   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 22:17:19 714   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 22:17:19 818   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('127.0.0.1','Firefox','/Menu/GetMenus','GET')
+
+  2020-11-11 22:17:19 825   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:17:19 835   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/menu/getmenus' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:17:19 849   :   select m.*  from hd_roleUser ru left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.isShow = 1 and ru.uid = 4 and m.type = 1 or m.type = 3 and ru.isFreeze=1  order by m.sort
+
+  2020-11-11 22:17:24 430   :     select * from hd_role
+
+  2020-11-11 22:20:49 758   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 22:21:34 381   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 22:21:59 880   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 22:22:03 828   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 22:22:03 834   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('127.0.0.1','Firefox','/Menu/GetMenus','GET')
+
+  2020-11-11 22:22:03 843   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:22:03 850   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/menu/getmenus' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:22:03 859   :   select m.*  from hd_roleUser ru left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.isShow = 1 and ru.uid = 4 and m.type = 1 or m.type = 3 and ru.isFreeze=1  order by m.sort
+
+  2020-11-11 22:22:09 364   :     select * from hd_role
+
+  2020-11-11 22:22:46 696   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 22:22:46 702   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/Menu/GetMenus','GET')
+
+  2020-11-11 22:22:46 709   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:22:46 716   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/menu/getmenus' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:22:46 726   :   select m.*  from hd_roleUser ru left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.isShow = 1 and ru.uid = 4 and m.type = 1 or m.type = 3 and ru.isFreeze=1  order by m.sort
+
+  2020-11-11 22:22:48 292   :     select * from hd_role
+
+  2020-11-11 22:23:53 883   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 22:23:54 146   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 22:23:58 817   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 22:23:58 823   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/Menu/GetMenus','GET')
+
+  2020-11-11 22:23:58 832   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:23:58 839   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/menu/getmenus' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:23:58 848   :   select m.*  from hd_roleUser ru left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.isShow = 1 and ru.uid = 4 and m.type = 1 or m.type = 3 and ru.isFreeze=1  order by m.sort
+
+  2020-11-11 22:24:08 762   :     select * from hd_role
+
+  2020-11-11 22:24:21 274   :   select * from hd_user where userName = 'jason1'
+
+  2020-11-11 22:24:21 282   :   insert into hd_roleUser(rid,uid,isFreeze)values(2,5,1)
+
+  2020-11-11 22:29:23 843   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/list','GET')
+
+  2020-11-11 22:29:23 848   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/roleList','GET')
+
+  2020-11-11 22:29:23 856   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/Menu/GetMenus','GET')
+
+  2020-11-11 22:29:23 925   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:29:23 929   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:29:23 934   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/rolelist' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:29:23 938   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:29:23 943   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/list' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:29:23 948   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/menu/getmenus' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:29:23 953   :     select * from hd_role
+
+  2020-11-11 22:29:23 958   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 22:29:23 962   :   select m.*  from hd_roleUser ru left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.isShow = 1 and ru.uid = 4 and m.type = 1 or m.type = 3 and ru.isFreeze=1  order by m.sort
+
+  2020-11-11 22:29:33 151   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/AddManager','POST')
+
+  2020-11-11 22:29:33 159   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:29:33 165   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/addmanager' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:32:03 333   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/Menu/GetMenus','GET')
+
+  2020-11-11 22:32:03 341   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/list','GET')
+
+  2020-11-11 22:32:03 351   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:32:03 357   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:32:03 362   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/menu/getmenus' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:32:03 367   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/list' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:32:03 372   :   select m.*  from hd_roleUser ru left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.isShow = 1 and ru.uid = 4 and m.type = 1 or m.type = 3 and ru.isFreeze=1  order by m.sort
+
+  2020-11-11 22:32:03 378   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 22:32:05 594   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/roleList','GET')
+
+  2020-11-11 22:32:05 642   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:32:05 647   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/rolelist' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:32:05 656   :     select * from hd_role
+
+  2020-11-11 22:32:16 342   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/AddManager','POST')
+
+  2020-11-11 22:32:16 388   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:32:16 393   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/addmanager' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:32:16 402   :   select * from hd_user where userName = 'jason1'
+
+  2020-11-11 22:32:16 409   :   insert into hd_roleUser(rid,uid,isFreeze)values(2,5,1)
+
+  2020-11-11 22:34:02 653   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('127.0.0.1','Firefox','/manager/list','GET')
+
+  2020-11-11 22:34:02 659   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:34:02 664   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/list' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:34:02 672   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 22:34:02 901   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/list','GET')
+
+  2020-11-11 22:34:02 906   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:34:02 912   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/list' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:34:02 921   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 22:34:05 376   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/list','GET')
+
+  2020-11-11 22:34:05 421   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/Menu/GetMenus','GET')
+
+  2020-11-11 22:34:05 427   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:34:05 432   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:34:05 438   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/list' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:34:05 443   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/menu/getmenus' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:34:05 449   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 22:34:05 455   :   select m.*  from hd_roleUser ru left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.isShow = 1 and ru.uid = 4 and m.type = 1 or m.type = 3 and ru.isFreeze=1  order by m.sort
+
+  2020-11-11 22:34:11 773   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/roleList','GET')
+
+  2020-11-11 22:34:11 817   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:34:11 823   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/rolelist' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:34:11 832   :     select * from hd_role
+
+  2020-11-11 22:34:34 050   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/AddManager','POST')
+
+  2020-11-11 22:34:34 057   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:34:34 062   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/addmanager' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:34:34 071   :   select * from hd_user where userName = 'admin2'
+
+  2020-11-11 22:34:34 077   :   insert into hd_roleUser(rid,uid,isFreeze)values(2,6,1)
+
+  2020-11-11 22:34:50 097   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('127.0.0.1','Firefox','/manager/list','GET')
+
+  2020-11-11 22:34:50 101   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:34:50 107   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/list' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:34:50 115   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 22:34:50 385   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/list','GET')
+
+  2020-11-11 22:34:50 390   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:34:50 395   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/list' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:34:50 399   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 22:35:59 960   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/roleList','GET')
+
+  2020-11-11 22:36:00 027   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:36:00 035   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/rolelist' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:36:00 051   :     select * from hd_role
+
+  2020-11-11 22:36:17 829   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/AddManager','POST')
+
+  2020-11-11 22:36:17 874   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:36:17 880   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/addmanager' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:36:17 889   :   select * from hd_user where userName = 'jason3'
+
+  2020-11-11 22:36:22 071   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/AddManager','POST')
+
+  2020-11-11 22:36:22 076   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:36:22 081   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/addmanager' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:36:22 089   :   select * from hd_user where userName = 'jason2'
+
+  2020-11-11 22:36:22 096   :   insert into hd_roleUser(rid,uid,isFreeze)values(2,7,1)
+
+  2020-11-11 22:36:22 111   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/list','GET')
+
+  2020-11-11 22:36:22 118   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:36:22 124   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/list' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:36:22 135   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 22:46:39 039   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/roleList','GET')
+
+  2020-11-11 22:46:39 122   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:46:39 131   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/rolelist' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:46:39 148   :     select * from hd_role
+
+  2020-11-11 22:46:41 855   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/roleList','GET')
+
+  2020-11-11 22:46:41 861   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:46:41 868   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/rolelist' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:46:41 881   :     select * from hd_role
+
+  2020-11-11 22:46:45 446   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/roleList','GET')
+
+  2020-11-11 22:46:45 492   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:46:45 498   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/rolelist' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:46:45 506   :     select * from hd_role
+
+  2020-11-11 22:46:49 593   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/AddManager','POST')
+
+  2020-11-11 22:46:49 637   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:46:49 642   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/addmanager' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:46:49 651   :   select * from hd_user where userName = 'jason1'
+
+  2020-11-11 22:46:49 657   :     select count(*)as count from hd_roleUser where uid =5
+
+  2020-11-11 22:46:49 662   :   insert into hd_roleUser(rid,uid,isFreeze)values(2,5,1)
+
+  2020-11-11 22:46:49 678   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/list','GET')
+
+  2020-11-11 22:46:49 684   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:46:49 689   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/list' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:46:49 698   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 22:46:53 424   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/list','GET')
+
+  2020-11-11 22:46:53 430   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/Menu/GetMenus','GET')
+
+  2020-11-11 22:46:53 470   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:46:53 475   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:46:53 479   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/list' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:46:53 483   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/menu/getmenus' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:46:53 488   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 22:46:53 495   :   select m.*  from hd_roleUser ru left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.isShow = 1 and ru.uid = 4 and m.type = 1 or m.type = 3 and ru.isFreeze=1  order by m.sort
+
+  2020-11-11 22:46:54 253   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/roleList','GET')
+
+  2020-11-11 22:46:54 260   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:46:54 267   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/rolelist' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:46:54 277   :     select * from hd_role
+
+  2020-11-11 22:47:02 458   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/AddManager','POST')
+
+  2020-11-11 22:47:02 503   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:47:02 508   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/addmanager' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:47:02 516   :   select * from hd_user where userName = 'jason1'
+
+  2020-11-11 22:47:02 521   :     select count(*)as count from hd_roleUser where uid =5
+
+  2020-11-11 22:47:02 526   :   insert into hd_roleUser(rid,uid,isFreeze)values(2,5,1)
+
+  2020-11-11 22:47:02 541   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/list','GET')
+
+  2020-11-11 22:47:02 547   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:47:02 552   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/list' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:47:02 560   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 22:48:37 625   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/list','GET')
+
+  2020-11-11 22:48:37 634   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/Menu/GetMenus','GET')
+
+  2020-11-11 22:48:37 695   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:48:37 698   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:48:37 702   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/list' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:48:37 706   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/menu/getmenus' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:48:37 719   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 22:48:37 723   :   select m.*  from hd_roleUser ru left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.isShow = 1 and ru.uid = 4 and m.type = 1 or m.type = 3 and ru.isFreeze=1  order by m.sort
+
+  2020-11-11 22:48:39 253   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/roleList','GET')
+
+  2020-11-11 22:48:39 298   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:48:39 306   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/rolelist' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:48:39 315   :     select * from hd_role
+
+  2020-11-11 22:48:48 981   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/AddManager','POST')
+
+  2020-11-11 22:48:48 986   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:48:48 991   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/addmanager' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:48:49 001   :   select * from hd_user where userName = 'jason1'
+
+  2020-11-11 22:48:49 008   :     select count(*)as count from hd_roleUser where uid =5
+
+  2020-11-11 22:48:51 488   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/AddManager','POST')
+
+  2020-11-11 22:48:51 532   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:48:51 537   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/addmanager' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:48:51 545   :   select * from hd_user where userName = 'jason1'
+
+  2020-11-11 22:48:51 550   :     select count(*)as count from hd_roleUser where uid =5
+
+  2020-11-11 22:48:58 550   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/AddManager','POST')
+
+  2020-11-11 22:48:58 555   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:48:58 560   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/addmanager' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:48:58 567   :   select * from hd_user where userName = 'jason1'
+
+  2020-11-11 22:48:58 572   :     select count(*)as count from hd_roleUser where uid =5
+
+  2020-11-11 22:49:47 054   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/','GET')
+
+  2020-11-11 22:50:04 700   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/list','GET')
+
+  2020-11-11 22:50:04 716   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:50:04 750   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/Menu/GetMenus','GET')
+
+  2020-11-11 22:50:04 757   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:50:04 782   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/menu/getmenus' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:50:04 787   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/list' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:50:04 808   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 22:50:04 814   :   select m.*  from hd_roleUser ru left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.isShow = 1 and ru.uid = 4 and m.type = 1 or m.type = 3 and ru.isFreeze=1  order by m.sort
+
+  2020-11-11 22:50:07 705   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/roleList','GET')
+
+  2020-11-11 22:50:07 745   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:50:07 756   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/rolelist' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:50:07 768   :     select * from hd_role
+
+  2020-11-11 22:50:23 447   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/AddManager','POST')
+
+  2020-11-11 22:50:23 454   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:50:23 461   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/addmanager' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:50:23 471   :   select * from hd_user where userName = 'jason1'
+
+  2020-11-11 22:50:28 557   :     select count(*)as count from hd_roleUser where uid =5
+
+  2020-11-11 22:51:10 852   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/list','GET')
+
+  2020-11-11 22:51:10 861   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/Menu/GetMenus','GET')
+
+  2020-11-11 22:51:10 865   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('127.0.0.1','Firefox','/Menu/GetMenus','GET')
+
+  2020-11-11 22:51:10 938   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:51:10 942   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:51:10 947   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:51:10 952   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/menu/getmenus' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:51:10 956   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/list' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:51:10 960   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/menu/getmenus' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:51:10 971   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 22:51:10 976   :   select m.*  from hd_roleUser ru left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.isShow = 1 and ru.uid = 4 and m.type = 1 or m.type = 3 and ru.isFreeze=1  order by m.sort
+
+  2020-11-11 22:51:10 981   :   select m.*  from hd_roleUser ru left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.isShow = 1 and ru.uid = 4 and m.type = 1 or m.type = 3 and ru.isFreeze=1  order by m.sort
+
+  2020-11-11 22:51:11 004   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('127.0.0.1','Firefox','/manager/list','GET')
+
+  2020-11-11 22:51:11 012   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:51:11 017   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/list' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:51:11 023   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 22:51:20 906   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/list','GET')
+
+  2020-11-11 22:51:20 912   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/Menu/GetMenus','GET')
+
+  2020-11-11 22:51:20 948   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:51:20 952   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:51:20 956   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/list' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:51:20 961   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/menu/getmenus' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:51:20 966   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 22:51:20 972   :   select m.*  from hd_roleUser ru left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.isShow = 1 and ru.uid = 4 and m.type = 1 or m.type = 3 and ru.isFreeze=1  order by m.sort
+
+  2020-11-11 22:51:21 798   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/roleList','GET')
+
+  2020-11-11 22:51:21 803   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:51:21 810   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/rolelist' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:51:21 822   :     select * from hd_role
+
+  2020-11-11 22:51:30 019   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/AddManager','POST')
+
+  2020-11-11 22:51:30 025   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:51:30 031   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/addmanager' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:51:30 040   :   select * from hd_user where userName = 'jason1'
+
+  2020-11-11 22:51:30 046   :     select count(*)as count from hd_roleUser where uid =5
+
+  2020-11-11 22:51:31 101   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/AddManager','POST')
+
+  2020-11-11 22:51:31 146   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:51:31 151   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/addmanager' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:51:31 160   :   select * from hd_user where userName = 'jason1'
+
+  2020-11-11 22:51:31 166   :     select count(*)as count from hd_roleUser where uid =5
+
+  2020-11-11 22:51:31 749   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/AddManager','POST')
+
+  2020-11-11 22:51:31 754   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:51:31 760   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/addmanager' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:51:31 768   :   select * from hd_user where userName = 'jason1'
+
+  2020-11-11 22:51:31 775   :     select count(*)as count from hd_roleUser where uid =5
+
+  2020-11-11 22:51:32 149   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/AddManager','POST')
+
+  2020-11-11 22:51:32 164   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:51:32 171   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/addmanager' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:51:32 179   :   select * from hd_user where userName = 'jason1'
+
+  2020-11-11 22:51:32 185   :     select count(*)as count from hd_roleUser where uid =5
+
+  2020-11-11 22:51:32 382   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/AddManager','POST')
+
+  2020-11-11 22:51:32 389   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:51:32 394   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/addmanager' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:51:32 401   :   select * from hd_user where userName = 'jason1'
+
+  2020-11-11 22:51:32 406   :     select count(*)as count from hd_roleUser where uid =5
+
+  2020-11-11 22:51:32 821   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/AddManager','POST')
+
+  2020-11-11 22:51:32 866   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:51:32 871   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/addmanager' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:51:32 879   :   select * from hd_user where userName = 'jason1'
+
+  2020-11-11 22:51:32 884   :     select count(*)as count from hd_roleUser where uid =5
+
+  2020-11-11 22:51:33 045   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/AddManager','POST')
+
+  2020-11-11 22:51:33 050   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:51:33 053   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/addmanager' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:51:33 058   :   select * from hd_user where userName = 'jason1'
+
+  2020-11-11 22:51:33 064   :     select count(*)as count from hd_roleUser where uid =5
+
+  2020-11-11 22:51:34 474   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/roleList','GET')
+
+  2020-11-11 22:51:34 480   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:51:34 486   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/rolelist' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:51:34 495   :     select * from hd_role
+
+  2020-11-11 22:51:38 942   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/AddManager','POST')
+
+  2020-11-11 22:51:38 949   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:51:38 955   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/addmanager' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:51:38 963   :   select * from hd_user where userName = 'jason6'
+
+  2020-11-11 22:51:38 970   :     select count(*)as count from hd_roleUser where uid =0
+
+  2020-11-11 22:51:39 726   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/AddManager','POST')
+
+  2020-11-11 22:51:39 764   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:51:39 769   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/addmanager' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:51:39 777   :   select * from hd_user where userName = 'jason6'
+
+  2020-11-11 22:51:39 782   :     select count(*)as count from hd_roleUser where uid =0
+
+  2020-11-11 22:51:40 183   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/AddManager','POST')
+
+  2020-11-11 22:51:40 226   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:51:40 231   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/addmanager' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:51:40 236   :   select * from hd_user where userName = 'jason6'
+
+  2020-11-11 22:51:40 240   :     select count(*)as count from hd_roleUser where uid =0
+
+  2020-11-11 22:51:40 494   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/AddManager','POST')
+
+  2020-11-11 22:51:40 536   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:51:40 542   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/addmanager' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:51:40 549   :   select * from hd_user where userName = 'jason6'
+
+  2020-11-11 22:51:40 555   :     select count(*)as count from hd_roleUser where uid =0
+
+  2020-11-11 22:51:40 701   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/AddManager','POST')
+
+  2020-11-11 22:51:40 706   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:51:40 712   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/addmanager' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:51:40 721   :   select * from hd_user where userName = 'jason6'
+
+  2020-11-11 22:51:40 728   :     select count(*)as count from hd_roleUser where uid =0
+
+  2020-11-11 22:51:40 902   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/AddManager','POST')
+
+  2020-11-11 22:51:40 916   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:51:40 921   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/addmanager' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:51:40 929   :   select * from hd_user where userName = 'jason6'
+
+  2020-11-11 22:51:40 934   :     select count(*)as count from hd_roleUser where uid =0
+
+  2020-11-11 22:51:41 071   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/AddManager','POST')
+
+  2020-11-11 22:51:41 080   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:51:41 086   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/addmanager' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:51:41 094   :   select * from hd_user where userName = 'jason6'
+
+  2020-11-11 22:51:41 100   :     select count(*)as count from hd_roleUser where uid =0
+
+  2020-11-11 22:51:41 238   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/AddManager','POST')
+
+  2020-11-11 22:51:41 245   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:51:41 251   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/addmanager' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:51:41 259   :   select * from hd_user where userName = 'jason6'
+
+  2020-11-11 22:51:41 265   :     select count(*)as count from hd_roleUser where uid =0
+
+  2020-11-11 22:52:00 109   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('127.0.0.1','Firefox','/manager/list','GET')
+
+  2020-11-11 22:52:00 115   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:52:00 123   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/list' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:52:00 131   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 22:52:00 345   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/list','GET')
+
+  2020-11-11 22:52:00 350   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:52:00 355   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/list' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:52:00 361   :   select r.*,u.userName,ru.isFreeze from hd_role r left join hd_roleUser ru on ru.rid = r.id left join hd_user u on u.id = ru.uid
+
+  2020-11-11 22:52:01 598   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/roleList','GET')
+
+  2020-11-11 22:52:01 644   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:52:01 653   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/rolelist' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:52:01 663   :     select * from hd_role
+
+  2020-11-11 22:52:05 574   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/manager/roleList','GET')
+
+  2020-11-11 22:52:05 582   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-11 22:52:05 588   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/rolelist' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-11 22:52:05 599   :     select * from hd_role

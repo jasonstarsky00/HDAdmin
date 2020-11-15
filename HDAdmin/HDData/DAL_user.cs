@@ -59,5 +59,15 @@ namespace HDData
             string sql = $"update  hd_user set name='{name}',integral={integral},haveDownloads={haveDownloads},isManager={isManager},isVip={isVip} where id ={id}";
             return DBhelper.ExecuteNonQuery(sql);
         }
+        /// <summary>
+        /// 根据用户名获取用户信息
+        /// </summary>
+        /// <param name="userName"></param>
+        /// <returns></returns>
+        public DataTable FindByUserName(string userName)
+        {
+            string sql = $"select * from hd_user where userName = '{userName}'";
+            return DBhelper.ExecuteDataTable(sql);
+        }
     }
 }

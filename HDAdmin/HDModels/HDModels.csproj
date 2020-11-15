@@ -44,6 +44,8 @@
     <Compile Include="backstageRequest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="manager.cs" />
+    <Compile Include="role.cs" />
+    <Compile Include="roleUser.cs" />
     <Compile Include="token.cs" />
     <Compile Include="user.cs" />
   </ItemGroup>

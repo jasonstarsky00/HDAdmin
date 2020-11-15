@@ -78,5 +78,16 @@ namespace HDBLL
         {
             return bll.EditUserInfo(id, name, integral, haveDownloads, isManager, isVip);
         }
+
+        /// <summary>
+        /// 根据用户名获取用户信息
+        /// </summary>
+        /// <param name="userName"></param>
+        /// <returns></returns>
+        public user FindByUserName(string userName)
+        {
+            DataTable dt = bll.FindByUserName(userName);
+            return ModelConvertHelper<user>.DtReturnFirst(dt);
+        }
     }
 }

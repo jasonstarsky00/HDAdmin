@@ -1,0 +1,8 @@
+
+  2020-11-14 11:23:31 688   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('127.0.0.1','Firefox','/manager/roleList','GET')
+
+  2020-11-14 11:23:31 796   :     select * from hd_token where value = 'jiayouya123456'
+
+  2020-11-14 11:23:31 825   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/manager/rolelist' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2020-11-14 11:23:31 855   :     select * from hd_role
