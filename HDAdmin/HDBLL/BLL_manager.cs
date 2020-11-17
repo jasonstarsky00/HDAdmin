@@ -97,5 +97,14 @@ namespace HDBLL
         {
             return bll.EditManager(rid, uid, isFreeze, id);
         }
+        /// <summary>
+        /// 删除管理员
+        /// </summary>
+        /// <param name="mid"></param>
+        /// <returns></returns>
+        public int DeleteManager(int mid)
+        {
+            return bll.DeleteManager(mid);
+        }
     }
 }

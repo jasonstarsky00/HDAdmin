@@ -160,5 +160,26 @@ namespace HDAdmin.Controllers
             }
             return Json(new { code = code, msg = msg }, JsonRequestBehavior.AllowGet);
         }
+        /// <summary>
+        /// 删除管理员
+        /// </summary>
+        /// <param name="mid">管理id</param>
+        /// <returns></returns>
+        [HttpPost]
+        public ActionResult DeleteManager(int mid)
+        {
+            int code = 100;
+            string msg = "删除管理员失败";
+            if (mid > 0)
+            {
+                int res = BLL_manager.Instance.DeleteManager(mid);
+                if (res > 0)
+                {
+                    code = 200;
+                    msg = "删除管理员成功";
+                }
+            }
+            return Json(new { code = code, msg = msg }, JsonRequestBehavior.AllowGet);
+        }
     }
 }

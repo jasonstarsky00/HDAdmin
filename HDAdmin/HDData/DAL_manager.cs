@@ -77,5 +77,15 @@ namespace HDData
             string sql = $"update hd_roleUser set rid ={rid},uid={uid},isFreeze = {isFreeze} where id = {id}";
             return DBhelper.ExecuteNonQuery(sql);
         }
+        /// <summary>
+        /// 删除管理员
+        /// </summary>
+        /// <param name="mid"></param>
+        /// <returns></returns>
+        public int DeleteManager(int mid)
+        {
+            string sql = $"  delete from hd_roleUser where id = {mid}";
+            return DBhelper.ExecuteNonQuery(sql);
+        }
     }
 }
