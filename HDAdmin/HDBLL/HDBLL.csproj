@@ -43,6 +43,7 @@
     <Compile Include="BLL_backstageMenuUser.cs" />
     <Compile Include="BLL_backstageRequest.cs" />
     <Compile Include="BLL_manager.cs" />
+    <Compile Include="BLL_templateType.cs" />
     <Compile Include="BLL_token.cs" />
     <Compile Include="BLL_user.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
