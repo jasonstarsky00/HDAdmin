@@ -29,4 +29,12 @@ namespace HDModels
         /// </summary>
         public DateTime createTime { get; set; }
     }
+    /// <summary>
+    /// 后台需用分类
+    /// </summary>
+    public class pptTypes
+    {
+        public int id { get; set; }
+        public string typeName { get; set; }
+    }
 } 

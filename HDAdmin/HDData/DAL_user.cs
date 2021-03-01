@@ -69,5 +69,16 @@ namespace HDData
             string sql = $"select * from hd_user where userName = '{userName}'";
             return DBhelper.ExecuteDataTable(sql);
         }
+        /// <summary>
+        /// 根据账号密码获取用户信息
+        /// </summary>
+        /// <param name="userName"></param>
+        /// <param name="passWord"></param>
+        /// <returns></returns>
+        public DataTable FindUser(string userName,string passWord)
+        {
+            string sql = $"select * from hd_user where userName = '{userName}' and passWord = '{passWord}'";
+            return DBhelper.ExecuteDataTable(sql);
+        }
     }
 }

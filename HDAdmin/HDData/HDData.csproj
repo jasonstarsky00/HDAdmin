@@ -43,6 +43,8 @@
     <Compile Include="DAL_backstageMenuUser.cs" />
     <Compile Include="DAL_backstageRequest.cs" />
     <Compile Include="DAL_manager.cs" />
+    <Compile Include="DAL_ppt.cs" />
+    <Compile Include="DAL_Role.cs" />
     <Compile Include="DAL_templateType.cs" />
     <Compile Include="DAL_token.cs" />
     <Compile Include="DAL_user.cs" />

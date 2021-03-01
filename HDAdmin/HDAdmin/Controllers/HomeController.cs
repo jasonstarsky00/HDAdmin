@@ -40,7 +40,21 @@ namespace HDAdmin.Controllers
         /// <returns></returns>
         public ActionResult Login(string user,string password)
         {
-            return Json(new { code = 200, msg = "登录成功", data = new { id = 1, name = "sjjg", token= "jiayouya123456" } }, JsonRequestBehavior.AllowGet);
+            //判断账号
+            //生成token
+            //返回token和用户信息
+
+            //获取用户信息
+            user userInfo = BLL_user.Instance.FindUser(user, password);
+            if (userInfo.Id > 0)
+            {
+                return Json(new { code = 200, msg = "登录成功", data = new { id = userInfo.Id, name = "sjjg", token = "jiayouya123456" } }, JsonRequestBehavior.AllowGet);
+            }
+            else
+            {
+                return Json(new { code = 200, msg = "登录成功", data = new { id = 1, name = "sjjg", token = "jiayouya123456" } }, JsonRequestBehavior.AllowGet);
+            }
+           
         }
         public ActionResult TestToken(string name)
         {

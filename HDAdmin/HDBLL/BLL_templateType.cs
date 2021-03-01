@@ -87,5 +87,13 @@ namespace HDBLL
         {
             return bll.DeleteType(id);
         }
+        /// <summary>
+        /// 获取所有分类名称和id
+        /// </summary>
+        /// <returns></returns>
+        public DataTable GetPptTypes()
+        {
+            return bll.GetPptTypes();
+        }
     }
 }

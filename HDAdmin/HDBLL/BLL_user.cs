@@ -89,5 +89,16 @@ namespace HDBLL
             DataTable dt = bll.FindByUserName(userName);
             return ModelConvertHelper<user>.DtReturnFirst(dt);
         }
+        /// <summary>
+        /// 根据账号密码获取用户信息
+        /// </summary>
+        /// <param name="userName"></param>
+        /// <param name="passWord"></param>
+        /// <returns></returns>
+        public user FindUser(string userName, string passWord)
+        {
+            DataTable dt = bll.FindUser(userName,passWord);
+            return ModelConvertHelper<user>.DtReturnFirst(dt);
+        }
     }
 }

@@ -1,0 +1,30 @@
+
+  2021-02-26 02:34:21 717   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/ppt/List','GET')
+
+  2021-02-26 02:34:21 720   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/Menu/GetMenus','GET')
+
+  2021-02-26 02:34:21 783   :     select * from hd_token where value = 'jiayouya123456'
+
+  2021-02-26 02:34:21 787   :     select * from hd_token where value = 'jiayouya123456'
+
+  2021-02-26 02:34:21 791   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/ppt/list' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2021-02-26 02:34:21 795   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/menu/getmenus' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2021-02-26 02:34:21 808   :   select distinct m.* from hd_backstageMenu m left join  hd_bsRole bsr  on bsr.bsMenuId = m.id left join  hd_roleUser ru  on ru.rid = bsr.rid where ru.uid = 4 and m.type = 1 or m.type = 3 and m.isShow = 1 and ru.isFreeze = 1 order by m.sort
+
+  2021-02-26 02:34:21 816   :   select top 10
+                        (select count(*) from hd_ppt u where 1=1 )as total,* from
+                        (select ROW_NUMBER() over (order by id) as Row,p.* from hd_ppt p where 1 =1)
+                        hd_ppt where Row between 0 and 10
+
+  2021-02-26 17:16:29 413   :   insert into hd_backstageRequest(ip,browser,requestUrl,requestType)values('::1','Chrome','/User/List','GET')
+
+  2021-02-26 17:16:29 495   :     select * from hd_token where value = 'jiayouya123456'
+
+  2021-02-26 17:16:29 508   :   select count(*) as count from hd_user u left join hd_roleUser ru on ru.uid = u.id left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.str = '/user/list' and m.isShow = 1 and u.id = 4 and ru.isFreeze=1 and u.isFreeze=1
+
+  2021-02-26 17:16:29 540   :   select top 10 
+                        (select count(*) from hd_user u where 1=1  )as total,* from 
+                        (select ROW_NUMBER()over (order by id) as Row,u.* from hd_user u where 1=1  )
+                         hd_user where Row between  0 and 10

@@ -116,5 +116,22 @@ namespace HDAdmin.Controllers
             }
             return Json(new { code = code, msg = msg }, JsonRequestBehavior.AllowGet);
         }
+        /// <summary>
+        /// 获取模板分类
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult GetPptTypes()
+        {
+            int code = 100;
+            string msg = "获取模板分类失败";
+            DataTable dt = BLL_templateType.Instance.GetPptTypes();
+            List<pptTypes> list = ModelConvertHelper<pptTypes>.ConverModel(dt);
+            if (list.Count > 0)
+            {
+                code = 200;
+                msg = "获取模板分类成功";
+            }
+            return Json(new { code = code, msg = msg, pptTypes = list }, JsonRequestBehavior.AllowGet);
+        }
     }
 }

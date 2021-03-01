@@ -30,7 +30,7 @@ namespace HDData
         /// <returns></returns>
         public DataTable GetUserMenusByUid(int id)
         {
-            string sql = $"select m.*  from hd_roleUser ru left join hd_bsRole br on br.rid = ru.rid left join hd_backstageMenu m on m.id = br.bsMenuId where m.isShow = 1 and ru.uid = {id} and m.type = 1 or m.type = 3 and ru.isFreeze=1  order by m.sort";
+            string sql = $"select distinct m.* from hd_backstageMenu m left join  hd_bsRole bsr  on bsr.bsMenuId = m.id left join  hd_roleUser ru  on ru.rid = bsr.rid where ru.uid = {id} and m.type = 1 or m.type = 3 and m.isShow = 1 and ru.isFreeze = 1 order by m.sort";
             return DBhelper.ExecuteDataTable(sql);
         }
     }

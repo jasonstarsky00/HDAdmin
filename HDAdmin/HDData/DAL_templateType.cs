@@ -76,5 +76,14 @@ namespace HDData
             string sql = $"  delete from hd_templateType where id = {id}";
             return DBhelper.ExecuteNonQuery(sql);
         }
+        /// <summary>
+        /// 获取所有分类名称和id
+        /// </summary>
+        /// <returns></returns>
+        public DataTable GetPptTypes()
+        {
+            string sql = " select id,typeName from hd_templateType";
+            return DBhelper.ExecuteDataTable(sql);
+        }
     }
 }
